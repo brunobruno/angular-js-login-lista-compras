@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app>
+
+<head>
+    <title>iBuy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/angular-1.0.1.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div id="container" ng-controller="ListaComprasController">
+       <header><img src="img/ibuy.png"></header>
+        <table id="lista-compras" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Comprado?</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody <tr ng-repeat="item in itens" class="comprado-{{ item.comprado }}">
+                <td>
+                    <input type="checkbox" ng-model="item.comprado">
+                </td>
+                <td contenteditable="true">{{ item.produto }}</td>
+                <td>{{ item.quantidade }}<span ng-click="remove($index)"><i class="fa fa-minus-circle fa-2x"></i></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <form class="form-inline" name="formItem">
+            <input type="text" ng-model="item.produto" placeholder="Produto">
+            <input type="number" ng-model="item.quantidade" placeholder="Quantidade" class="qtd input-small">
+            <button class="btn btn-primary" ng-click="adicionaItem()"><i class="fa fa-cart-plus fa-2x"></i></button>
+        </form>
+    </div>
+</body>
+</html>

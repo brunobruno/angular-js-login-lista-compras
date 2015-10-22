@@ -1,0 +1,161 @@
+	* {
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box
+	}
+	body {
+	    margin: 10px 0;
+	    padding: 0;
+	    font-family: arial;
+	    background-color: #FF9933
+	}
+	#container {
+	    width: 55%;
+	    padding: 10px 0;
+	    border-radius: 10px;
+	    background-color: #FFAD5C;
+	    position: fixed;
+	    bottom: 20%;
+	    right: 0;
+	    left: 0;
+	    margin: auto
+	}
+	form {
+	    width: 70%;
+	    margin: 4% 15%
+	}
+	header {
+	    text-align: center;
+	    color: #006393
+	}
+	input[type=text],
+	input[type=password] {
+	    width: 100%;
+	    padding: 15px 45px;
+	    border-radius: 5px;
+	    border: 0;
+	    background: #FFD6AE;
+	    font-size: 15px;
+	    font-family: arial;
+	    color: #803300
+	}
+	button {
+	    margin-top: 30px;
+	    width: 100%;
+	    padding: 15px;
+	    border: 0;
+	    border-radius: 5px;
+	    border-bottom: 5px solid #331400;
+	    background-color: #803300;
+	    color: #fff;
+	    font-size: 15px;
+	    cursor: pointer
+	}
+	input[type=submit]:hover {
+	    border: 0
+	}
+	textarea {
+	    width: 100%;
+	    padding: 15px;
+	    margin-top: 10px;
+	    border: 1px solid #7ac9b7;
+	    border-radius: 5px;
+	    margin-bottom: 20px;
+	    resize: none
+	}
+	input[type=text]:focus,
+	input[type=password]:focus,
+	textarea:focus {
+	    border-color: #4697e4
+	}
+	label {
+	    font-size: 14px
+	}
+	table {
+	    margin: 0 auto;
+	    background: #FFE0C2;
+	    min-width: 70%;
+	    border-radius: 10px;
+	    font-size: 12px;
+	    text-align: center;
+	    padding: 15px
+	}
+	th {
+	    text-transform: uppercase
+	}
+	th,
+	td {
+	    border-bottom: 1px solid #FFAD5C;
+	    color: #803300;
+	    padding: 5px
+	}
+	::-webkit-input-placeholder {
+	    color: #FF6600
+	}
+	:-moz-placeholder {
+	    color: #FF6600
+	}
+	::-moz-placeholder {
+	    color: #FF6600
+	}
+	:-ms-input-placeholder {
+	    color: #FF6600
+	}
+	.fa-user,
+	.fa-key {
+	    position: relative;
+	    bottom: -40px;
+	    left: 10px;
+	    color: #FF6600
+	}
+	.fa-minus-circle {
+	    cursor: pointer;
+	    float: right
+	}
+	.comprado-true {
+	    text-decoration: line-through;
+	    color: red
+	}
+	.qtd {
+	    width: 70%;
+	    padding: 15px;
+	    background: #FFE0C2;
+	    border: 0;
+	    border-radius: 0 0 0 10px
+	}
+	.qtd + button {
+	    width: 30%;
+	    float: right;
+	    margin: 0;
+	    height: 47px;
+	    border: 0;
+	    padding-top: 7px;
+	    border-radius: 0 0 10px 0
+	}
+	.form-inline input:first-child {
+	    border-radius: 10px 10px 0 0;
+	    padding: 15px
+	}
+	@media (max-width: 600px) {
+	    table {
+	        border-radius: 0;
+	        min-width: 100%;
+	        width: 100%
+	    }
+	    #container {
+	        width: 90%;
+	        margin: 0 auto
+	    }
+	}
+	.edit-in-place span {
+	    cursor: pointer;
+	}
+	.edit-in-place input {
+	    display: none;
+	}
+	.edit-in-place.active span {
+	    display: none;
+	}
+	.edit-in-place.active input {
+	    display: inline-block;
+	}
